@@ -1,3 +1,4 @@
+-- Task 01
 SELECT EMPNO AS 'Employee number', 
 	LASTNAME AS 'Last name', 
 	BIRTHDATE AS 'Date of birth', 
@@ -5,3 +6,10 @@ SELECT EMPNO AS 'Employee number',
 FROM Employee
 WHERE SALARY > 30000
 ORDER BY SALARY DESC;
+
+--Task 02
+SELECT LASTNAME AS 'Last name', 
+	FIRSTNME AS 'First name',
+	WORKDEPT AS 'Department number'
+FROM Employee
+ORDER BY WORKDEPT DESC, LASTNAME DESC;
