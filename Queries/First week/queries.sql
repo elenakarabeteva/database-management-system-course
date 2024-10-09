@@ -25,3 +25,10 @@ SELECT DISTINCT EMPNO AS 'Employee number',
 FROM Emp_Act
 WHERE EMPNO <= '000100'
 ORDER BY EMPNO;
+
+-- Task 05
+SELECT LASTNAME AS 'Last name', 
+	SALARY AS 'Salary', 
+	BONUS AS 'Bonus'
+FROM Employee
+WHERE SEX = 'M';
