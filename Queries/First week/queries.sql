@@ -32,3 +32,10 @@ SELECT LASTNAME AS 'Last name',
 	BONUS AS 'Bonus'
 FROM Employee
 WHERE SEX = 'M';
+
+-- Task 06
+SELECT LASTNAME AS 'Last name', 
+	SALARY AS 'Salary', 
+	COMM AS 'Commission'
+FROM Employee
+WHERE YEAR(HIREDATE) > 1979 AND SALARY > 20000;
