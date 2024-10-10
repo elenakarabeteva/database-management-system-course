@@ -66,3 +66,10 @@ SELECT PROJNO AS 'Project number',
 FROM Emp_Act
 WHERE PROJNO LIKE 'AD%' AND ACTNO IN (10, 80, 180)
 ORDER BY PROJNO, ACTNO;
+
+-- Task 10
+SELECT MGRNO AS 'Manager number', 
+	DEPTNO AS 'Department number'
+FROM Departament
+WHERE MGRNO IS NOT NULL
+ORDER BY MGRNO;
