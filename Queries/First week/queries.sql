@@ -57,3 +57,12 @@ SELECT LASTNAME AS 'Last name',
 FROM Employee
 WHERE (BONUS = 400 OR BONUS = 500) AND SALARY > 22000  AND COMM < 1900
 ORDER BY LASTNAME; 
+
+-- Task 09
+SELECT PROJNO AS 'Project number',
+	ACTNO AS 'Activity number',
+	EMSTDATE AS 'Starting date for activity',
+	EMENDATE AS 'Ending date for activity'
+FROM Emp_Act
+WHERE PROJNO LIKE 'AD%' AND ACTNO IN (10, 80, 180)
+ORDER BY PROJNO, ACTNO;
