@@ -98,3 +98,10 @@ SELECT PROJNO AS 'Project number',
 FROM Project
 WHERE PROJNAME LIKE '%SUPPORT%'
 ORDER BY PROJNO;
+
+-- Taks 14
+SELECT DEPTNO AS 'Departament number',
+	DEPTNAME AS 'Departament name'
+FROM Departament
+WHERE DEPTNO LIKE '_1_'
+ORDER BY DEPTNO;
