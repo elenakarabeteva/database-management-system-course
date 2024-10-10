@@ -73,3 +73,12 @@ SELECT MGRNO AS 'Manager number',
 FROM Departament
 WHERE MGRNO IS NOT NULL
 ORDER BY MGRNO;
+
+-- Task 11
+SELECT EMPNO AS 'Employee number',
+	LASTNAME AS 'Last name',
+	SALARY AS 'Salary',
+	BONUS AS 'Bonus'
+FROM Employee
+WHERE BONUS BETWEEN 800 AND 1000
+ORDER BY BONUS, EMPNO;
