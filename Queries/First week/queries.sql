@@ -105,3 +105,12 @@ SELECT DEPTNO AS 'Departament number',
 FROM Departament
 WHERE DEPTNO LIKE '_1_'
 ORDER BY DEPTNO;
+
+-- Task 15
+SELECT TOP 5 LASTNAME AS 'Last name',
+	FIRSTNME AS 'First name',
+	MIDINIT AS 'Middle initial', 
+	SALARY AS 'Salary'
+FROM Employee
+WHERE JOB NOT IN ('PRES', 'MANAGER')
+ORDER BY SALARY DESC;
